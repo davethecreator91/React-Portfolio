@@ -69,11 +69,15 @@ const ulStyle = {
 backgroundColor: '#b974b6'
 }
 
+const pageStyle = {
+  backgroundColor: '#25254B',
+}
 
 return (
-    <>
-
-    <h1>Education</h1>
+    
+<div style={pageStyle}>
+<div><h1>Experience</h1></div>
+    <h2>Education</h2>
     <hr />
       <ul style={ulStyle}>
       {`Institution: ${Education[0].school} `}
@@ -81,7 +85,7 @@ return (
       
       </ul>
 
-    <h1>Certificates</h1>
+    <h2>Certificates</h2>
     <hr />
       <ul style={ulStyle}>
         {Certificates.map((cert,index) =>
@@ -91,7 +95,7 @@ return (
                 )}
       </ul>
 
-    <h1>Skills</h1>
+    <h2>Skills</h2>
     <hr />
       <ul style={ulStyle}>
           {Skills.map((skill,index) => 
@@ -100,7 +104,8 @@ return (
               </li>
               )}
       </ul>
-    </>
+      </div>
+  
 )
 }
 
